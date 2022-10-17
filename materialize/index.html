@@ -15,14 +15,14 @@
     </style>
     </head>
 
-    <body>
+    <body id="home" class="scrollspy">
         <!-- navbar -->
         
         <div class="navbar-fixed">
             <nav class="blue darken-2">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">Chaerul</a>
+                    <a href="#home" class="brand-logo">Chaerul</a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                       <li><a href="#about">About Us</a></li>
@@ -72,7 +72,7 @@
         </div>
 
         <!-- about -->
-        <section id="about" class="about">
+        <section id="about" class="about scrollspy">
             <div class="container">
                 <div class="row">
                     <h3 class="center light grey-text text-darken-3">About Me</h3>
@@ -99,10 +99,10 @@
         </section>
 
         <!-- Clients -->
-        <div class="parallax-container">
+        <div id="clients" class="parallax-container scrollspy">
             <div class="parallax"><img src="img/slider/4.png"></div>
         
-        <div id="clients" class="container clients">
+        <div class="container clients ">
             <h3 class="center light white-text">Me Client</h3>
             <div class="row">
                 <div class="col m4 s12 center">
@@ -120,7 +120,7 @@
 
 
         <!-- services -->
-        <section id="services" class="services grey lighten-3">
+        <section id="services" class="services grey lighten-3 scrollspy">
           <div class="container">
             <div class="row">
               <h3 class="light center grey-text text-darken-3">Me Services</h3>
@@ -149,7 +149,7 @@
           </div>
         </section>
 
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio" class="portfolio scrollspy">
           <div class="container">
             <h3 class="light center grey-text text-darken-3">Portfolio</h3>
           <div class="row">
@@ -183,7 +183,7 @@
           </div>
         </section>
 
-        <section id="contact" class="contact grey lighten-3">
+        <section id="contact" class="contact grey lighten-3 scrollspy">
           <div class="container">
             <h3 class="light grey-text text-darken-3 center">Contact Us</h3>
           <div class="row">
@@ -251,6 +251,11 @@
 
         const materialbox = document.querySelectorAll('.materialboxed');
         M.Materialbox.init(materialbox);
+
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll,{
+          scrollOffset:50
+        });
       </script>
     </body>
   </html>
