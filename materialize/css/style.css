@@ -3,7 +3,7 @@
 }
 
 #about{
-    height: 1100px;
+    height: 700px;
 }
 .img-profile{
     height: 600px;
@@ -11,7 +11,7 @@
 
 
 
-@media only screen and (min-device-width: 680px){
+@media screen and (min-device-width: 680px){
     .slider h3,
     .slider h5,
     .clients h3{
