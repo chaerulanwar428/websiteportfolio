@@ -5,6 +5,9 @@
 #about{
     height: 700px;
 }
+.img-profile{
+    height: 700px;
+}
 
 @media only screen and (min-device-width: 680px){
     .slider h3,
